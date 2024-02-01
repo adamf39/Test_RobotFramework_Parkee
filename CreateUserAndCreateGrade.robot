@@ -74,7 +74,7 @@ Login dan Tambah Pay Grades Baru
     Wait Until Element Is Visible    ${Add_Grade}
     Click Button     ${Add_Grade}
     Wait Until Element Is Visible    ${Name_Grade}
-    Input Text       ${Name_Grade}    Grade 10
+    Input Text       ${Name_Grade}    Grade 6
     Click Button     ${Save_Grade}
     Sleep    5s
     Click Button     ${Add_Currency}
@@ -87,3 +87,5 @@ Login dan Tambah Pay Grades Baru
     Input Text       ${Min_Salary}    10000
     Input Text       ${Max_Salary}    20000
     Click Button     ${Save_Currency}
+    Sleep    3s
+    Capture Page Screenshot

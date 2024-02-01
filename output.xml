@@ -1,323 +1,339 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.1 on darwin)" generated="20240201 21:35:22.398" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.12.1 on darwin)" generated="20240201 21:51:46.183" rpa="false" schemaversion="4">
 <suite id="s1" name="CreateUserAndCreateGrade" source="/Users/madamakbar/Documents/Test_RobotFramework_Parkee/CreateUserAndCreateGrade.robot">
 <test id="s1-t1" name="Login dan Tambah Pengguna Baru" line="37">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240201 21:35:22.497" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
-<status status="PASS" starttime="20240201 21:35:22.497" endtime="20240201 21:35:27.564"/>
+<msg timestamp="20240201 21:51:46.278" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20240201 21:51:46.278" endtime="20240201 21:51:51.227"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${Username}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20240201 21:35:27.564" endtime="20240201 21:35:28.004"/>
+<status status="PASS" starttime="20240201 21:51:51.228" endtime="20240201 21:51:51.659"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${Username}</arg>
 <arg>admin</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:28.004" level="INFO">Typing text 'admin' into text field 'name=username'.</msg>
-<status status="PASS" starttime="20240201 21:35:28.004" endtime="20240201 21:35:28.101"/>
+<msg timestamp="20240201 21:51:51.660" level="INFO">Typing text 'admin' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20240201 21:51:51.660" endtime="20240201 21:51:51.783"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${Password}</arg>
 <arg>admin123</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:28.102" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
-<status status="PASS" starttime="20240201 21:35:28.101" endtime="20240201 21:35:28.142"/>
+<msg timestamp="20240201 21:51:51.784" level="INFO">Typing text 'admin123' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20240201 21:51:51.783" endtime="20240201 21:51:51.839"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${Button_Login}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:28.143" level="INFO">Clicking button '//div[@id='app']/div[@class='orangehrm-login-layout']/div[@class='orangehrm-login-layout-blob']//form[@action='/web/index.php/auth/validate']/div[3]/button[@type='submit']'.</msg>
-<status status="PASS" starttime="20240201 21:35:28.143" endtime="20240201 21:35:29.524"/>
+<msg timestamp="20240201 21:51:51.839" level="INFO">Clicking button '//div[@id='app']/div[@class='orangehrm-login-layout']/div[@class='orangehrm-login-layout-blob']//form[@action='/web/index.php/auth/validate']/div[3]/button[@type='submit']'.</msg>
+<status status="PASS" starttime="20240201 21:51:51.839" endtime="20240201 21:51:53.099"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${Menu_Admin}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20240201 21:35:29.525" endtime="20240201 21:35:29.960"/>
+<status status="PASS" starttime="20240201 21:51:53.099" endtime="20240201 21:51:53.543"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Menu_Admin}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:29.961" level="INFO">Clicking element '//div[@id='app']//aside/nav[@role='navigation']//ul[@class='oxd-main-menu']/li[1]/a[@href='/web/index.php/admin/viewAdminModule']'.</msg>
-<status status="PASS" starttime="20240201 21:35:29.960" endtime="20240201 21:35:31.484"/>
+<msg timestamp="20240201 21:51:53.543" level="INFO">Clicking element '//div[@id='app']//aside/nav[@role='navigation']//ul[@class='oxd-main-menu']/li[1]/a[@href='/web/index.php/admin/viewAdminModule']'.</msg>
+<status status="PASS" starttime="20240201 21:51:53.543" endtime="20240201 21:51:54.598"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${Buttun_Add}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20240201 21:35:31.484" endtime="20240201 21:35:31.918"/>
+<status status="PASS" starttime="20240201 21:51:54.598" endtime="20240201 21:51:55.069"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${Buttun_Add}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:31.919" level="INFO">Clicking button '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//div[@class='orangehrm-header-container']/button[@type='button']'.</msg>
-<status status="PASS" starttime="20240201 21:35:31.918" endtime="20240201 21:35:32.370"/>
+<msg timestamp="20240201 21:51:55.069" level="INFO">Clicking button '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//div[@class='orangehrm-header-container']/button[@type='button']'.</msg>
+<status status="PASS" starttime="20240201 21:51:55.069" endtime="20240201 21:51:55.632"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${User_Role}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20240201 21:35:32.370" endtime="20240201 21:35:32.814"/>
+<status status="PASS" starttime="20240201 21:51:55.632" endtime="20240201 21:51:56.068"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${User_Role}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:32.815" level="INFO">Clicking element '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//form[@class='oxd-form']/div[@class='oxd-form-row']/div/div[1]/div/div[2]/div[@class='oxd-select-wrapper']/div/div[@class='oxd-select-text-input']'.</msg>
-<status status="PASS" starttime="20240201 21:35:32.814" endtime="20240201 21:35:32.837"/>
+<msg timestamp="20240201 21:51:56.069" level="INFO">Clicking element '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//form[@class='oxd-form']/div[@class='oxd-form-row']/div/div[1]/div/div[2]/div[@class='oxd-select-wrapper']/div/div[@class='oxd-select-text-input']'.</msg>
+<status status="PASS" starttime="20240201 21:51:56.069" endtime="20240201 21:51:56.092"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Select_Role}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:32.837" level="INFO">Clicking element '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[1]/div/div[2]/div/div[2]/div[2]'.</msg>
-<status status="PASS" starttime="20240201 21:35:32.837" endtime="20240201 21:35:32.858"/>
+<msg timestamp="20240201 21:51:56.092" level="INFO">Clicking element '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[1]/div/div[2]/div/div[2]/div[2]'.</msg>
+<status status="PASS" starttime="20240201 21:51:56.092" endtime="20240201 21:51:56.113"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Status}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:32.858" level="INFO">Clicking element '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//form[@class='oxd-form']/div[@class='oxd-form-row']/div/div[3]/div/div[2]/div[@class='oxd-select-wrapper']/div/div[@class='oxd-select-text-input']'.</msg>
-<status status="PASS" starttime="20240201 21:35:32.858" endtime="20240201 21:35:32.876"/>
+<msg timestamp="20240201 21:51:56.114" level="INFO">Clicking element '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//form[@class='oxd-form']/div[@class='oxd-form-row']/div/div[3]/div/div[2]/div[@class='oxd-select-wrapper']/div/div[@class='oxd-select-text-input']'.</msg>
+<status status="PASS" starttime="20240201 21:51:56.113" endtime="20240201 21:51:56.131"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Select_Status}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:32.876" level="INFO">Clicking element '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//form[@class='oxd-form']/div[@class='oxd-form-row']//div[@role='listbox']/div[2]/span[.='Enabled']'.</msg>
-<status status="PASS" starttime="20240201 21:35:32.876" endtime="20240201 21:35:32.897"/>
+<msg timestamp="20240201 21:51:56.132" level="INFO">Clicking element '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//form[@class='oxd-form']/div[@class='oxd-form-row']//div[@role='listbox']/div[2]/span[.='Enabled']'.</msg>
+<status status="PASS" starttime="20240201 21:51:56.131" endtime="20240201 21:51:56.155"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${Employe_Name}</arg>
 <arg>Linda Jane Anderson</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:32.897" level="INFO">Typing text 'Linda Jane Anderson' into text field '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//form[@class='oxd-form']/div[@class='oxd-form-row']/div/div[2]/div//div[@class='oxd-autocomplete-wrapper']/div/input[@placeholder='Type for hints...']'.</msg>
-<status status="PASS" starttime="20240201 21:35:32.897" endtime="20240201 21:35:32.936"/>
+<msg timestamp="20240201 21:51:56.155" level="INFO">Typing text 'Linda Jane Anderson' into text field '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//form[@class='oxd-form']/div[@class='oxd-form-row']/div/div[2]/div//div[@class='oxd-autocomplete-wrapper']/div/input[@placeholder='Type for hints...']'.</msg>
+<status status="PASS" starttime="20240201 21:51:56.155" endtime="20240201 21:51:56.193"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240201 21:35:35.941" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20240201 21:35:32.936" endtime="20240201 21:35:35.942"/>
+<msg timestamp="20240201 21:51:59.194" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240201 21:51:56.193" endtime="20240201 21:51:59.195"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Select_Name}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:35.945" level="INFO">Clicking element '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[2]/div/div[2]/div/div[2]/div'.</msg>
-<status status="PASS" starttime="20240201 21:35:35.944" endtime="20240201 21:35:35.986"/>
+<msg timestamp="20240201 21:51:59.198" level="INFO">Clicking element '//*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[2]/div/div[2]/div/div[2]/div'.</msg>
+<status status="PASS" starttime="20240201 21:51:59.196" endtime="20240201 21:51:59.267"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240201 21:35:38.988" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20240201 21:35:35.987" endtime="20240201 21:35:38.989"/>
+<msg timestamp="20240201 21:52:02.270" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240201 21:51:59.268" endtime="20240201 21:52:02.270"/>
 </kw>
 <kw name="Generate Random Username" library="RandomUsernameLibrary">
 <var>${random_username}</var>
 <arg>Robot</arg>
-<msg timestamp="20240201 21:35:38.992" level="INFO">${random_username} = Robot057</msg>
-<status status="PASS" starttime="20240201 21:35:38.991" endtime="20240201 21:35:38.992"/>
+<msg timestamp="20240201 21:52:02.271" level="INFO">${random_username} = Robot342</msg>
+<status status="PASS" starttime="20240201 21:52:02.271" endtime="20240201 21:52:02.271"/>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <arg>${random_username}</arg>
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
-<msg timestamp="20240201 21:35:38.993" level="INFO">${random_username} = Robot057</msg>
-<status status="PASS" starttime="20240201 21:35:38.993" endtime="20240201 21:35:38.994"/>
+<msg timestamp="20240201 21:52:02.272" level="INFO">${random_username} = Robot342</msg>
+<status status="PASS" starttime="20240201 21:52:02.272" endtime="20240201 21:52:02.272"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${New_Username}</arg>
 <arg>${random_username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:38.996" level="INFO">Typing text 'Robot057' into text field '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//form[@class='oxd-form']/div[@class='oxd-form-row']/div/div[4]/div/div[2]/input'.</msg>
-<status status="PASS" starttime="20240201 21:35:38.995" endtime="20240201 21:35:39.070"/>
+<msg timestamp="20240201 21:52:02.273" level="INFO">Typing text 'Robot342' into text field '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//form[@class='oxd-form']/div[@class='oxd-form-row']/div/div[4]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20240201 21:52:02.273" endtime="20240201 21:52:02.326"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>${New_Password}</arg>
 <arg>password123</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:39.070" level="INFO">Typing password into text field '//div[@id='app']//form[@class='oxd-form']/div[@class='oxd-form-row user-password-row']/div/div[@class='oxd-grid-item oxd-grid-item--gutters user-password-cell']/div//input[@type='password']'.</msg>
-<msg timestamp="20240201 21:35:39.087" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20240201 21:35:39.108" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20240201 21:35:39.070" endtime="20240201 21:35:39.108"/>
+<msg timestamp="20240201 21:52:02.326" level="INFO">Typing password into text field '//div[@id='app']//form[@class='oxd-form']/div[@class='oxd-form-row user-password-row']/div/div[@class='oxd-grid-item oxd-grid-item--gutters user-password-cell']/div//input[@type='password']'.</msg>
+<msg timestamp="20240201 21:52:02.342" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20240201 21:52:02.365" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20240201 21:52:02.326" endtime="20240201 21:52:02.365"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>${Confirm_Password}</arg>
 <arg>password123</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:39.109" level="INFO">Typing password into text field '//div[@id='app']//form[@class='oxd-form']/div[@class='oxd-form-row user-password-row']/div/div[@class='oxd-grid-item oxd-grid-item--gutters']/div//input[@type='password']'.</msg>
-<msg timestamp="20240201 21:35:39.125" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20240201 21:35:39.148" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20240201 21:35:39.108" endtime="20240201 21:35:39.148"/>
+<msg timestamp="20240201 21:52:02.365" level="INFO">Typing password into text field '//div[@id='app']//form[@class='oxd-form']/div[@class='oxd-form-row user-password-row']/div/div[@class='oxd-grid-item oxd-grid-item--gutters']/div//input[@type='password']'.</msg>
+<msg timestamp="20240201 21:52:02.381" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20240201 21:52:02.407" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20240201 21:52:02.365" endtime="20240201 21:52:02.407"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${Save_User}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:39.148" level="INFO">Clicking button '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']//form[@class='oxd-form']//button[@type='submit']'.</msg>
-<status status="PASS" starttime="20240201 21:35:39.148" endtime="20240201 21:35:39.175"/>
+<msg timestamp="20240201 21:52:02.407" level="INFO">Clicking button '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']//form[@class='oxd-form']//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20240201 21:52:02.407" endtime="20240201 21:52:02.447"/>
 </kw>
-<status status="PASS" starttime="20240201 21:35:22.496" endtime="20240201 21:35:39.175"/>
+<status status="PASS" starttime="20240201 21:51:46.277" endtime="20240201 21:52:02.448"/>
 </test>
 <test id="s1-t2" name="Login dan Tambah Pay Grades Baru" line="63">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240201 21:35:39.177" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
-<status status="PASS" starttime="20240201 21:35:39.176" endtime="20240201 21:35:43.826"/>
+<msg timestamp="20240201 21:52:02.449" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20240201 21:52:02.448" endtime="20240201 21:52:20.522"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${Username}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20240201 21:35:43.828" endtime="20240201 21:35:44.267"/>
+<status status="PASS" starttime="20240201 21:52:20.523" endtime="20240201 21:52:21.171"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${Username}</arg>
 <arg>${random_username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:44.268" level="INFO">Typing text 'Robot057' into text field 'name=username'.</msg>
-<status status="PASS" starttime="20240201 21:35:44.268" endtime="20240201 21:35:44.379"/>
+<msg timestamp="20240201 21:52:21.172" level="INFO">Typing text 'Robot342' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20240201 21:52:21.172" endtime="20240201 21:52:21.287"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${Password}</arg>
 <arg>password123</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:44.380" level="INFO">Typing text 'password123' into text field 'name=password'.</msg>
-<status status="PASS" starttime="20240201 21:35:44.379" endtime="20240201 21:35:44.467"/>
+<msg timestamp="20240201 21:52:21.288" level="INFO">Typing text 'password123' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20240201 21:52:21.288" endtime="20240201 21:52:21.350"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${Button_Login}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:44.467" level="INFO">Clicking button '//div[@id='app']/div[@class='orangehrm-login-layout']/div[@class='orangehrm-login-layout-blob']//form[@action='/web/index.php/auth/validate']/div[3]/button[@type='submit']'.</msg>
-<status status="PASS" starttime="20240201 21:35:44.467" endtime="20240201 21:35:45.803"/>
+<msg timestamp="20240201 21:52:21.351" level="INFO">Clicking button '//div[@id='app']/div[@class='orangehrm-login-layout']/div[@class='orangehrm-login-layout-blob']//form[@action='/web/index.php/auth/validate']/div[3]/button[@type='submit']'.</msg>
+<status status="PASS" starttime="20240201 21:52:21.351" endtime="20240201 21:52:22.620"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${Menu_Admin}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20240201 21:35:45.803" endtime="20240201 21:35:46.241"/>
+<status status="PASS" starttime="20240201 21:52:22.620" endtime="20240201 21:52:23.057"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Menu_Admin}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:46.241" level="INFO">Clicking element '//div[@id='app']//aside/nav[@role='navigation']//ul[@class='oxd-main-menu']/li[1]/a[@href='/web/index.php/admin/viewAdminModule']'.</msg>
-<status status="PASS" starttime="20240201 21:35:46.241" endtime="20240201 21:35:47.542"/>
+<msg timestamp="20240201 21:52:23.057" level="INFO">Clicking element '//div[@id='app']//aside/nav[@role='navigation']//ul[@class='oxd-main-menu']/li[1]/a[@href='/web/index.php/admin/viewAdminModule']'.</msg>
+<status status="PASS" starttime="20240201 21:52:23.057" endtime="20240201 21:52:24.245"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${Job}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20240201 21:35:47.542" endtime="20240201 21:35:47.995"/>
+<status status="PASS" starttime="20240201 21:52:24.245" endtime="20240201 21:52:24.684"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Job}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:47.996" level="INFO">Clicking element '//div[@id='app']//header[@class='oxd-topbar']//nav[@role='navigation']/ul/li[2]//i'.</msg>
-<status status="PASS" starttime="20240201 21:35:47.995" endtime="20240201 21:35:48.020"/>
+<msg timestamp="20240201 21:52:24.684" level="INFO">Clicking element '//div[@id='app']//header[@class='oxd-topbar']//nav[@role='navigation']/ul/li[2]//i'.</msg>
+<status status="PASS" starttime="20240201 21:52:24.684" endtime="20240201 21:52:24.706"/>
 </kw>
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>${Pay_Grade}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:48.020" level="INFO">Clicking link '//div[@id='app']//header[@class='oxd-topbar']//nav[@role='navigation']/ul//ul[@role='menu']/li[2]/a[@role='menuitem']'.</msg>
-<status status="PASS" starttime="20240201 21:35:48.020" endtime="20240201 21:35:48.539"/>
+<msg timestamp="20240201 21:52:24.706" level="INFO">Clicking link '//div[@id='app']//header[@class='oxd-topbar']//nav[@role='navigation']/ul//ul[@role='menu']/li[2]/a[@role='menuitem']'.</msg>
+<status status="PASS" starttime="20240201 21:52:24.706" endtime="20240201 21:52:25.156"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${Add_Grade}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20240201 21:35:48.540" endtime="20240201 21:35:48.978"/>
+<status status="PASS" starttime="20240201 21:52:25.157" endtime="20240201 21:52:25.582"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${Add_Grade}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:48.979" level="INFO">Clicking button '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//div[@class='orangehrm-header-container']/div/button[@type='button']'.</msg>
-<status status="PASS" starttime="20240201 21:35:48.979" endtime="20240201 21:35:49.443"/>
+<msg timestamp="20240201 21:52:25.582" level="INFO">Clicking button '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//div[@class='orangehrm-header-container']/div/button[@type='button']'.</msg>
+<status status="PASS" starttime="20240201 21:52:25.582" endtime="20240201 21:52:26.064"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${Name_Grade}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20240201 21:35:49.443" endtime="20240201 21:35:49.877"/>
+<status status="PASS" starttime="20240201 21:52:26.064" endtime="20240201 21:52:26.507"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${Name_Grade}</arg>
-<arg>Grade 7</arg>
+<arg>Grade 6</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:49.878" level="INFO">Typing text 'Grade 7' into text field '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//form[@class='oxd-form']/div[@class='oxd-form-row']//input'.</msg>
-<status status="PASS" starttime="20240201 21:35:49.878" endtime="20240201 21:35:49.919"/>
+<msg timestamp="20240201 21:52:26.508" level="INFO">Typing text 'Grade 6' into text field '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//form[@class='oxd-form']/div[@class='oxd-form-row']//input'.</msg>
+<status status="PASS" starttime="20240201 21:52:26.507" endtime="20240201 21:52:26.570"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${Save_Grade}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:49.919" level="INFO">Clicking button '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']//form[@class='oxd-form']//button[@type='submit']'.</msg>
-<status status="PASS" starttime="20240201 21:35:49.919" endtime="20240201 21:35:50.241"/>
+<msg timestamp="20240201 21:52:26.571" level="INFO">Clicking button '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']//form[@class='oxd-form']//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20240201 21:52:26.570" endtime="20240201 21:52:26.837"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20240201 21:35:55.245" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20240201 21:35:50.241" endtime="20240201 21:35:55.250"/>
+<msg timestamp="20240201 21:52:31.841" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240201 21:52:26.838" endtime="20240201 21:52:31.843"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${Add_Currency}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240201 21:35:55.253" level="INFO">Clicking button '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//div[@class='orangehrm-action-header']/button[@type='button']'.</msg>
-<msg timestamp="20240201 21:35:55.475" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20240201 21:35:55.475" level="FAIL">Button with locator '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//div[@class='orangehrm-action-header']/button[@type='button']' not found.</msg>
-<status status="FAIL" starttime="20240201 21:35:55.252" endtime="20240201 21:35:55.482"/>
+<msg timestamp="20240201 21:52:31.845" level="INFO">Clicking button '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//div[@class='orangehrm-action-header']/button[@type='button']'.</msg>
+<status status="PASS" starttime="20240201 21:52:31.844" endtime="20240201 21:52:31.899"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${Currency}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20240201 21:35:55.482" endtime="20240201 21:35:55.482"/>
+<status status="PASS" starttime="20240201 21:52:31.900" endtime="20240201 21:52:32.339"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Currency}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20240201 21:35:55.482" endtime="20240201 21:35:55.482"/>
+<msg timestamp="20240201 21:52:32.340" level="INFO">Clicking element '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']/div[@class='orangehrm-card-container']/form[@class='oxd-form']/div[1]//div[@class='oxd-select-wrapper']/div/div[@class='oxd-select-text-input']'.</msg>
+<status status="PASS" starttime="20240201 21:52:32.339" endtime="20240201 21:52:32.366"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20240201 21:35:55.482" endtime="20240201 21:35:55.483"/>
+<msg timestamp="20240201 21:52:35.369" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240201 21:52:32.366" endtime="20240201 21:52:35.370"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${Select_Currency}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="NOT RUN" starttime="20240201 21:35:55.483" endtime="20240201 21:35:55.483"/>
+<status status="PASS" starttime="20240201 21:52:35.372" endtime="20240201 21:52:35.683"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Select_Currency}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20240201 21:35:55.483" endtime="20240201 21:35:55.483"/>
+<msg timestamp="20240201 21:52:35.685" level="INFO">Clicking element '//*[@id="app"]/div[1]/div[2]/div[2]/div[2]/form/div[1]/div/div/div/div[2]/div/div[2]/div[139]'.</msg>
+<status status="PASS" starttime="20240201 21:52:35.683" endtime="20240201 21:52:35.725"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20240201 21:35:55.483" endtime="20240201 21:35:55.483"/>
+<msg timestamp="20240201 21:52:38.726" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240201 21:52:35.725" endtime="20240201 21:52:38.727"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${Min_Salary}</arg>
 <arg>10000</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20240201 21:35:55.483" endtime="20240201 21:35:55.483"/>
+<msg timestamp="20240201 21:52:38.730" level="INFO">Typing text '10000' into text field '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']/div[@class='orangehrm-card-container']/form[@class='oxd-form']/div[2]/div/div[1]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20240201 21:52:38.728" endtime="20240201 21:52:38.794"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${Max_Salary}</arg>
 <arg>20000</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20240201 21:35:55.483" endtime="20240201 21:35:55.483"/>
+<msg timestamp="20240201 21:52:38.795" level="INFO">Typing text '20000' into text field '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']/div[@class='orangehrm-card-container']/form[@class='oxd-form']/div[2]/div/div[2]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20240201 21:52:38.794" endtime="20240201 21:52:38.833"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>${Save_Currency}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20240201 21:35:55.483" endtime="20240201 21:35:55.484"/>
+<msg timestamp="20240201 21:52:38.834" level="INFO">Clicking button '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']/div[@class='orangehrm-card-container']/form[@class='oxd-form']//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20240201 21:52:38.834" endtime="20240201 21:52:38.861"/>
 </kw>
-<status status="FAIL" starttime="20240201 21:35:39.176" endtime="20240201 21:35:55.484">Button with locator '//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//div[@class='orangehrm-action-header']/button[@type='button']' not found.</status>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240201 21:52:41.862" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240201 21:52:38.861" endtime="20240201 21:52:41.864"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240201 21:52:42.201" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240201 21:52:41.864" endtime="20240201 21:52:42.201"/>
+</kw>
+<status status="PASS" starttime="20240201 21:52:02.448" endtime="20240201 21:52:42.201"/>
 </test>
-<status status="FAIL" starttime="20240201 21:35:22.400" endtime="20240201 21:35:55.484"/>
+<status status="PASS" starttime="20240201 21:51:46.185" endtime="20240201 21:52:42.201"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="1" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="1" skip="0" id="s1" name="CreateUserAndCreateGrade">CreateUserAndCreateGrade</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="CreateUserAndCreateGrade">CreateUserAndCreateGrade</stat>
 </suite>
 </statistics>
 <errors>
