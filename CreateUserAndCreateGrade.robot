@@ -49,7 +49,7 @@ Login dan Tambah Pengguna Baru
     Click Element    ${Select_Role}
     Click Element    ${Status}
     Click Element    ${Select_Status}
-    Input Text       ${Employe_Name}    John Smith
+    Input Text       ${Employe_Name}    Linda Jane Anderson
     Sleep    3s
     Click Element    ${Select_Name}
     Sleep    3s
@@ -74,7 +74,7 @@ Login dan Tambah Pay Grades Baru
     Wait Until Element Is Visible    ${Add_Grade}
     Click Button     ${Add_Grade}
     Wait Until Element Is Visible    ${Name_Grade}
-    Input Text       ${Name_Grade}    Grade 7
+    Input Text       ${Name_Grade}    Grade 10
     Click Button     ${Save_Grade}
     Sleep    5s
     Click Button     ${Add_Currency}

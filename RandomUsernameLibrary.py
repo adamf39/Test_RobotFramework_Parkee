@@ -2,10 +2,6 @@ import random
 import string
 
 class RandomUsernameLibrary:
-    global_random_username = ""
-
-    @classmethod
-    def generate_random_username(cls, name):
+    def generate_random_username(self, name):
         random_numbers = ''.join(random.choices(string.digits, k=3))
-        cls.global_random_username = f"{name}{random_numbers}"
-        return cls.global_random_username
+        return f"{name}{random_numbers}"
